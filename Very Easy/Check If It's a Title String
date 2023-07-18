@@ -1,0 +1,7 @@
+def check_title(txt):
+    return txt.istitle()
+
+# Test cases
+print(check_title("A Mind Boggling Achievement")) # Output: True
+print(check_title("A Simple Python Program!")) # Output: True
+print(check_title("Water is transparent")) # Output: False
