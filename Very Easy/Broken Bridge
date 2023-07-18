@@ -1,0 +1,7 @@
+def is_safe_bridge(bridge):
+    return ' ' not in bridge
+
+# Test cases
+print(is_safe_bridge("####"))    # Output: True
+print(is_safe_bridge("## ####")) # Output: False
+print(is_safe_bridge("#"))       # Output: True
