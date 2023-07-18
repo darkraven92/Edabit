@@ -1,0 +1,3 @@
+def calculate_fuel(distance):
+    fuel_needed = distance * 10
+    return max(fuel_needed, 100)
