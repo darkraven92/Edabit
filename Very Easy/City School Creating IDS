@@ -1,0 +1,9 @@
+def create_id(first_name, last_name):
+    first_char = first_name[0].lower()
+    last_chars = last_name[:3].capitalize()
+    return first_char + last_chars
+
+# Test cases
+print(create_id("mary", "lamb"))   # Output: "mLam"
+print(create_id("John", "SMITH"))  # Output: "jSmi"
+print(create_id("mary", "smith"))  # Output: "mSmi"
