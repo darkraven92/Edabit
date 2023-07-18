@@ -1,0 +1,27 @@
+def AND(a, b):
+    if a == 1 and b == 1:
+        return 1
+    else:
+        return 0
+
+def OR(a, b):
+    if a == 1 or b == 1:
+        return 1
+    else:
+        return 0
+
+def NOT(a):
+    if a == 0:
+        return 1
+    else:
+        return 0
+
+# Test cases
+print(AND(1, 1)) # Output: 1
+print(AND(0, 0)) # Output: 0
+
+print(OR(1, 0))  # Output: 1
+print(OR(1, 1))  # Output: 1
+
+print(NOT(0))    # Output: 1
+print(NOT(1))    # Output: 0
