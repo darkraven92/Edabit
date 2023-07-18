@@ -1,0 +1,7 @@
+def should_serve_drinks(age, on_break):
+    return age >= 18 and not on_break
+
+# Test cases
+print(should_serve_drinks(17, True))  # Output: False
+print(should_serve_drinks(19, False))  # Output: True
+print(should_serve_drinks(30, True))  # Output: False
