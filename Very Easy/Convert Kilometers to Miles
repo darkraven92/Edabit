@@ -1,0 +1,8 @@
+def km_to_miles(km):
+    miles = km * 0.621371
+    return round(miles, 5)
+
+# Test cases
+print(km_to_miles(2))  # Output: 1.24274
+print(km_to_miles(6))  # Output: 3.72823
+print(km_to_miles(8))  # Output: 4.97097
