@@ -1,0 +1,9 @@
+def last_ind(lst_or_str):
+    if not lst_or_str:
+        return None
+    return lst_or_str[-1] if isinstance(lst_or_str, (list, str)) else None
+
+# Test cases
+print(last_ind([0, 4, 19, 34, 50, -9, 2]))  # Output: 2
+print(last_ind("The quick brown fox jumped over the lazy dog"))  # Output: "g"
+print(last_ind([]))  # Output: None
