@@ -1,0 +1,7 @@
+def get_container(product):
+    containers = {
+        "Bread": "bag",
+        "Candy": "plastic",
+        "Beer": "bottle"
+    }
+    return containers.get(product, None)
