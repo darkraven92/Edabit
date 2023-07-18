@@ -1,0 +1,2 @@
+def string_int(string):
+    return int(string)
