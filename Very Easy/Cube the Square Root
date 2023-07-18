@@ -1,0 +1,2 @@
+def cube_squareroot(num):
+    return int(num ** (1/2)) ** 3
