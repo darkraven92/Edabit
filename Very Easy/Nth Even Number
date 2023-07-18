@@ -1,0 +1,7 @@
+def nth_even(n):
+    return n * 2
+
+# Test cases
+print(nth_even(1))   # Output: 0
+print(nth_even(2))   # Output: 2
+print(nth_even(100)) # Output: 198
