@@ -1,0 +1,2 @@
+def cubes(num):
+    return num ** 3
