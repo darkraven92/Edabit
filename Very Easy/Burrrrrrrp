@@ -1,0 +1,7 @@
+def long_burp(num):
+    return "Bu" + "r" * num + "p"
+
+# Test cases
+print(long_burp(3))  # Output: "Burrrp"
+print(long_burp(5))  # Output: "Burrrrrp"
+print(long_burp(9))  # Output: "Burrrrrrrrrp"
