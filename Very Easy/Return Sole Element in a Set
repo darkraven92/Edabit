@@ -1,0 +1,9 @@
+def element_from_set(input_set):
+    # Since sets contain unique elements, we can use the pop() method to get the single element
+    element = input_set.pop()
+    return element
+
+# Test cases
+print(element_from_set({"edabit"})) # Output: "edabit"
+print(element_from_set({True})) # Output: True
+print(element_from_set({11037})) # Output: 11037
