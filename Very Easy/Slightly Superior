@@ -1,0 +1,7 @@
+def is_first_superior(list1, list2):
+    for item1, item2 in zip(list1, list2):
+        if item1 > item2:
+            return True
+        elif item1 < item2:
+            return False
+    return False
