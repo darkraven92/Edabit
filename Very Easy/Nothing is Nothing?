@@ -1,0 +1,7 @@
+def nothing_is_nothing(*args):
+    return all(args)
+
+# Test cases
+print(nothing_is_nothing(0, False, [], {}))  # Output: False
+print(nothing_is_nothing(33, "Hello", (True, True, 3)))  # Output: True
+print(nothing_is_nothing(True, None))  # Output: False
