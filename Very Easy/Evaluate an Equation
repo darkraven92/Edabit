@@ -1,0 +1,7 @@
+def eq(equation):
+    return eval(equation)
+
+# Test cases
+print(eq("1+2"))       # Output: 3
+print(eq("6/(9-7)"))   # Output: 3
+print(eq("3+2-4"))     # Output: 1
