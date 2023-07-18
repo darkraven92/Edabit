@@ -1,0 +1,7 @@
+def distance_home(distance_list):
+    return sum(abs(distance) for distance in distance_list)
+
+# Test cases
+print(distance_home([2, 4, 2, 5])) # Output: 13
+print(distance_home([-1, -4, -3, -2])) # Output: 10
+print(distance_home([3, 4, -5, -2])) # Output: 0
