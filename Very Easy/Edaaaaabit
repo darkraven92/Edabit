@@ -1,0 +1,7 @@
+def how_many_times(num):
+    return "Ed" + "a" * num + "bit"
+
+# Test cases
+print(how_many_times(5))   # Output: "Edaaaaabit"
+print(how_many_times(0))   # Output: "Edbit"
+print(how_many_times(12))  # Output: "Edaaaaaaaaaaaabit"
