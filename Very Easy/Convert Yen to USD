@@ -1,0 +1,7 @@
+def yen_to_usd(jpy):
+    return round(jpy / 107.5, 2)
+
+# Test cases
+print(yen_to_usd(1))   # Output: 0.01
+print(yen_to_usd(500)) # Output: 4.65
+print(yen_to_usd(649)) # Output: 6.04
