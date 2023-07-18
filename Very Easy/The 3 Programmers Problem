@@ -1,0 +1,9 @@
+def programmers(wage1, wage2, wage3):
+    max_wage = max(wage1, wage2, wage3)
+    min_wage = min(wage1, wage2, wage3)
+    return max_wage - min_wage
+
+# Test cases
+print(programmers(147, 33, 526))  # Output: 493
+print(programmers(33, 72, 74))   # Output: 41
+print(programmers(1, 5, 9))      # Output: 8
