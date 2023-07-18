@@ -1,0 +1,2 @@
+def less_than_100(num1, num2):
+    return num1 + num2 < 100
