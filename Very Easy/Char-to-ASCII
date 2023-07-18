@@ -1,0 +1,9 @@
+def ctoa(char):
+    return ord(char)
+
+# Test cases
+print(ctoa("A"))    # Output: 65
+print(ctoa("m"))    # Output: 109
+print(ctoa("["))    # Output: 91
+print(ctoa("\\"))   # Output: 92
+``
