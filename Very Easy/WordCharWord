@@ -1,0 +1,8 @@
+def add(char, string):
+    words = string.split()
+    return char.join(words)
+
+# Test cases
+print(add("R", "python is fun"))  # Output: "pythonRisRfun"
+print(add("#", "hello world!"))   # Output: "hello#world!"
+print(add("#", " "))              # Output: "#"
