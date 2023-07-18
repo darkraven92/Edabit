@@ -1,0 +1,7 @@
+def count_claps(s):
+    return s.count('C')
+
+# Test cases
+print(count_claps("ClaClaClaClap!"))  # Output: 4
+print(count_claps("ClClClaClaClaClap!"))  # Output: 6
+print(count_claps("CCClaClClap!Clap!ClClClap!"))  # Output: 9
