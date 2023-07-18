@@ -1,0 +1,2 @@
+def divisible_by_five(num):
+    return num % 5 == 0
