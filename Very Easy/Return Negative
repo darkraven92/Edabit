@@ -1,0 +1,2 @@
+def return_negative(number):
+    return -abs(number)
