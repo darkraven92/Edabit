@@ -1,0 +1,8 @@
+def birthday_cake_candles(candles):
+    max_height = max(candles)
+    return candles.count(max_height)
+
+# Test cases
+print(birthday_cake_candles([4, 4, 1, 3]))  # Output: 2
+print(birthday_cake_candles([3, 2, 1, 3]))  # Output: 2
+print(birthday_cake_candles([82, 49, 82, 82, 41, 82, 15, 63, 38, 25]))  # Output: 4
