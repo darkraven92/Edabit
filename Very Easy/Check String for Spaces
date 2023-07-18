@@ -1,0 +1,9 @@
+def has_spaces(txt):
+    return ' ' in txt
+
+# Test cases
+print(has_spaces("hello"))       # Output: False
+print(has_spaces("hello, world")) # Output: True
+print(has_spaces(" "))            # Output: True
+print(has_spaces(""))             # Output: False
+print(has_spaces(",./!@#"))       # Output: False
