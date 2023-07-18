@@ -1,0 +1,10 @@
+def half_quarter_eighth(number):
+    half = number / 2
+    quarter = number / 4
+    eighth = number / 8
+    return [half, quarter, eighth]
+
+# Test cases
+print(half_quarter_eighth(6))   # Output: [3.0, 1.5, 0.75]
+print(half_quarter_eighth(22))  # Output: [11.0, 5.5, 2.75]
+print(half_quarter_eighth(25))  # Output: [12.5, 6.25, 3.125]
