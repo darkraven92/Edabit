@@ -1,0 +1,8 @@
+# Given list
+arr = ["eyes", "nose", "lips", "ears"]
+
+# Destructuring assignment
+_, _, lips, _ = arr
+
+# The variable 'lips' now holds the value "lips"
+print(lips)  # Output: "lips"
