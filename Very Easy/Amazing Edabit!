@@ -1,0 +1,10 @@
+def amazing_edabit(s):
+    if "edabit" in s:
+        return s
+    else:
+        return s.replace("amazing", "not amazing")
+
+# Test cases
+print(amazing_edabit("edabit is amazing."))  # Output: "edabit is amazing."
+print(amazing_edabit("Mubashir is amazing."))  # Output: "Mubashir is not amazing."
+print(amazing_edabit("Infinity is amazing."))  # Output: "Infinity is not amazing."
