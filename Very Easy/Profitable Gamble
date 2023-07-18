@@ -1,0 +1,3 @@
+def profitable_gamble(prob, prize, pay):
+    net_profit = prob * prize - pay
+    return net_profit > 0
