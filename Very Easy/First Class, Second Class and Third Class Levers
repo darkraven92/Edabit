@@ -1,0 +1,14 @@
+def determine_lever(lst):
+    if lst == ["e", "f", "l"]:
+        return "first class lever"
+    elif lst == ["e", "l", "f"]:
+        return "second class lever"
+    elif lst == ["f", "e", "l"]:
+        return "third class lever"
+    else:
+        return "Unknown lever type"
+
+# Test cases
+print(determine_lever(["e", "f", "l"]))  # Output: "first class lever"
+print(determine_lever(["e", "l", "f"]))  # Output: "second class lever"
+print(determine_lever(["f", "e", "l"]))  # Output: "third class lever"
