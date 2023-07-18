@@ -1,0 +1,8 @@
+def swap(a, b):
+    return b, a
+
+# Test cases
+a = 100
+b = 200
+a, b = swap(a, b)
+print(a, b)  # Output: 200, 100
