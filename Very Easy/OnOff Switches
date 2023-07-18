@@ -1,0 +1,2 @@
+def pos_com(num_switches):
+    return 2 ** num_switches
