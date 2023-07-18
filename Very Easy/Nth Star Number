@@ -1,0 +1,7 @@
+def star_number(n):
+    return 6 * n * (n - 1) + 1
+
+# Test cases
+print(star_number(2))  # Output: 13
+print(star_number(3))  # Output: 37
+print(star_number(5))  # Output: 121
