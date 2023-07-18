@@ -1,0 +1,7 @@
+def all_truthy(*args):
+    return all(args)
+
+# Test cases
+print(all_truthy(True, True, True))  # Output: True
+print(all_truthy(True, False, True)) # Output: False
+print(all_truthy(5, 4, 3, 2, 1, 0))  # Output
