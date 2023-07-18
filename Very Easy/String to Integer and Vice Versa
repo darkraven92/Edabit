@@ -1,0 +1,5 @@
+def to_int(string):
+    return int(string)
+
+def to_str(integer):
+    return str(integer)
