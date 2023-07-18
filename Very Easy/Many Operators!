@@ -1,0 +1,15 @@
+def operate(num1, num2, operator):
+    operations = {
+        "+": lambda x, y: x + y,
+        "-": lambda x, y: x - y,
+        "*": lambda x, y: x * y,
+        "/": lambda x, y: x / y,
+        "%": lambda x, y: x % y,
+    }
+    
+    return operations[operator](num1, num2)
+
+# Test cases
+print(operate(1, 2, "+"))  # Output: 3
+print(operate(7, 10, "-"))  # Output: -3
+print(operate(20, 10, "%"))  # Output: 0
