@@ -1,0 +1,8 @@
+def how_many_walls(n, w, h):
+    wall_area = w * h
+    return n // wall_area
+
+# Test cases
+print(how_many_walls(100, 4, 5))   # Output: 5
+print(how_many_walls(10, 15, 12))  # Output: 0
+print(how_many_walls(41, 3, 6))    # Output: 2
