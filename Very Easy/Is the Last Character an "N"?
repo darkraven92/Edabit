@@ -1,0 +1,2 @@
+def is_last_character_n(name):
+    return name[-1] == "n"
