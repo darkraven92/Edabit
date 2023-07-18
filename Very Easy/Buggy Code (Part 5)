@@ -1,0 +1,7 @@
+def print_list(n):
+    return list(range(1, n + 1))
+
+# Test cases
+print(print_list(1)) # Output: [1]
+print(print_list(3)) # Output: [1, 2, 3]
+print(print_list(6)) # Output: [1, 2, 3, 4, 5, 6]
