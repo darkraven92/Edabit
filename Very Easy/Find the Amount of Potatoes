@@ -1,0 +1,7 @@
+def potatoes(s):
+    return s.count("potato")
+
+# Test cases
+print(potatoes("potato"))  # Output: 1
+print(potatoes("potatopotato"))  # Output: 2
+print(potatoes("potatoapple"))  # Output: 1
