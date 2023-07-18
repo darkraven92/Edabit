@@ -1,0 +1,6 @@
+lambda_func = lambda x: x
+
+# Test cases
+print(lambda_func(3))       # Output: 3
+print(lambda_func("3"))     # Output: "3"
+print(lambda_func(True))    # Output: True
