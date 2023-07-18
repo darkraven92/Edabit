@@ -1,0 +1,7 @@
+def how_many_stickers(n):
+    return 6 * n * n
+
+# Test cases
+print(how_many_stickers(1)) # Output: 6
+print(how_many_stickers(2)) # Output: 24
+print(how_many_stickers(3)) # Output: 54
