@@ -1,0 +1,17 @@
+def is_disarium(num):
+    # Convert the number to a string to access its individual digits
+    num_str = str(num)
+    
+    # Calculate the sum of each digit raised to their respective positions
+    disarium_sum = sum(int(digit) ** (index + 1) for index, digit in enumerate(num_str))
+    
+    # Compare the sum with the original number
+    return disarium_sum == num
+
+# Test examples
+print(is_disarium(75)) # Output: False
+print(is_disarium(135)) # Output: True
+print(is_disarium(544)) # Output: False
+print(is_disarium(518)) # Output: True
+print(is_disarium(466)) # Output: False
+print(is_disarium(8)) # Output: True
