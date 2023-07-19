@@ -1,0 +1,9 @@
+def flipping_bits(n):
+    bitmask = 0xFFFFFFFF  # 32-bit bitmask of all ones
+    flipped = n ^ bitmask
+    return flipped
+
+# Test examples
+print(flipping_bits(2147483647)) # Output: 2147483648
+print(flipping_bits(1))          # Output: 4294967294
+print(flipping_bits(4))          # Output: 4294967291
