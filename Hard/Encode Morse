@@ -1,0 +1,34 @@
+def encode_morse(s):
+    # Dictionary to map characters to Morse code
+    char_to_dots = {
+      'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.',
+      'G': '--.', 'H': '....', 'I': '..', 'J': '.---', 'K': '-.-', 'L': '.-..',
+      'M': '--', 'N': '-.', 'O': '---', 'P': '.--.', 'Q': '--.-', 'R': '.-.',
+      'S': '...', 'T': '-', 'U': '..-', 'V': '...-', 'W': '.--', 'X': '-..-',
+      'Y': '-.--', 'Z': '--..', ' ': ' ', '0': '-----',
+      '1': '.----', '2': '..---', '3': '...--', '4': '....-', '5': '.....',
+      '6': '-....', '7': '--...', '8': '---..', '9': '----.',
+      '&': '.-...', "'": '.----.', '@': '.--.-.', ')': '-.--.-', '(': '-.--.',
+      ':': '---...', ',': '--..--', '=': '-...-', '!': '-.-.--', '.': '.-.-.-',
+      '-': '-....-', '+': '.-.-.', '"': '.-..-.', '?': '..--..', '/': '-..-.'
+    }
+
+    # Convert input string to upper case
+    s_upper = s.upper()
+
+    # Create a list to store Morse code representation of each character
+    morse_code_list = []
+
+    # Iterate over each character in the string
+    for char in s_upper:
+        # Look up Morse code representation in the dictionary
+        morse_code = char_to_dots.get(char, '')
+        # Append Morse code representation to the list
+        morse_code_list.append(morse_code)
+
+    # Join the Morse code representations with spaces and return the result
+    return ' '.join(morse_code_list)
+
+# Test examples
+print(encode_morse("EDABBIT CHALLENGE")) # Output: ". -.. .- -... -... .. -   -.-. .... .- .-.. .-.. . -. --. ."
+print(encode_morse("HELP ME !")) # Output: ".... . .-.. .--.   -- .   -.-.--"
