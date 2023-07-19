@@ -1,0 +1,12 @@
+import socket
+
+def get_domain(ip_address):
+    try:
+        domain_name = socket.gethostbyaddr(ip_address)
+        return domain_name[0]
+    except socket.herror:
+        return "Not found"
+
+# Test examples
+print(get_domain("8.8.8.8")) # Output: "dns.google"
+print(get_domain("8.8.4.4")) # Output: "dns.google"
