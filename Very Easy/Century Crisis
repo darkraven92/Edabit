@@ -1,0 +1,3 @@
+def future_people(P, nP):
+    future_population = P + (nP * 360)
+    return future_population
