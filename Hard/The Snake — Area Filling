@@ -1,0 +1,11 @@
+import math
+
+def snakefill(n):
+    area = n * n
+    times_doubled = math.floor(math.log2(area))
+    return times_doubled
+
+# Test examples
+print(snakefill(3))  # Output: 3
+print(snakefill(6))  # Output: 5
+print(snakefill(24)) # Output: 9
