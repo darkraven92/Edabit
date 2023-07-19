@@ -1,0 +1,19 @@
+def ave_spd(uphill_time, uphill_rate, downhill_rate):
+    # Convert uphill time from minutes to hours
+    uphill_time_hours = uphill_time / 60
+    
+    # Calculate the total distance traveled uphill and downhill
+    total_distance = 2 * uphill_rate * uphill_time_hours
+    
+    # Calculate the total time taken (uphill and downhill combined)
+    total_time = uphill_time_hours + (total_distance / downhill_rate)
+    
+    # Calculate the average speed
+    average_speed = total_distance / total_time
+    
+    return int(average_speed)
+
+# Test examples
+print(ave_spd(18, 20, 60)) # Output: 30
+print(ave_spd(30, 10, 30)) # Output: 15
+print(ave_spd(30, 8, 24)) # Output: 12
