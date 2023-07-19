@@ -1,0 +1,13 @@
+def interview(times, total_time):
+    if len(times) != 8:
+        return "disqualified"
+
+    very_easy = all(time <= 5 for time in times[:2])
+    easy = all(time <= 10 for time in times[2:4])
+    medium = all(time <= 15 for time in times[4:6])
+    hard = all(time <= 20 for time in times[6:8])
+
+    if very_easy and easy and medium and hard and total_time <= 120:
+        return "qualified"
+    else:
+        return "disqualified"
