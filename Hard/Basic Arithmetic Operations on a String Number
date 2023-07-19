@@ -1,0 +1,24 @@
+def arithmetic_operation(s):
+    # Split the input string into three parts: num1, operator, num2
+    num1, operator, num2 = s.split()
+
+    # Convert num1 and num2 to integers
+    num1 = int(num1)
+    num2 = int(num2)
+
+    # Perform the corresponding arithmetic operation based on the operator
+    if operator == "+":
+        return num1 + num2
+    elif operator == "-":
+        return num1 - num2
+    elif operator == "*":
+        return num1 * num2
+    elif operator == "//":
+        # Check if num2 is zero before performing division
+        return -1 if num2 == 0 else num1 // num2
+
+# Test examples
+print(arithmetic_operation("12 + 12")) # Output: 24
+print(arithmetic_operation("12 - 12")) # Output: 0
+print(arithmetic_operation("12 * 12")) # Output: 144
+print(arithmetic_operation("12 // 0")) # Output: -1
