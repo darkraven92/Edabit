@@ -1,0 +1,8 @@
+def pentagonal(num):
+    return 1 + 5 * (num - 1) * num // 2
+
+# Test examples
+print(pentagonal(1)) # Output: 1
+print(pentagonal(2)) # Output: 6
+print(pentagonal(3)) # Output: 16
+print(pentagonal(8)) # Output: 141
